@@ -1,0 +1,193 @@
+        #wrap {
+            width: 402px;
+            height: 535px;
+            margin: 0 auto;
+            position: relative;
+            background:#F7F3F4;
+        }
+        
+        .memodetails {
+            height: 64px;
+            background: url(../images/head.jpg);
+        }
+        
+        .memodetails span:nth-of-type(1) {
+            width: 13px;
+            height: 24px;
+            float: left;
+            margin-top: 24px;
+            margin-left: 25px;
+        }
+        
+        .memodetails span:nth-of-type(2) {
+            width: 13px;
+            height: 24px;
+            float: right;
+            margin-top: 24px;
+            margin-right: 46px;
+            display: none;
+        }
+        
+        .memodetails p {
+            width: 120px;
+            height: 64px;
+            color: #fff;
+            font: 22px "楷体";
+            float: left;
+            margin-left: 112px;
+            line-height: 64px;
+        }
+        
+        .memodetails input {
+            float: right;
+            color: #fff;
+            font: 20px "楷体";
+            line-height: 64px;
+            margin-right: 10px;
+            /* display: none; */
+        }
+        
+        .memodetailscon {
+            width: 402px;
+            height: 425px;
+            background: #f6f3f4;
+            padding-top: 22px;
+            padding-left: 18px;
+            box-sizing: border-box;
+            background: url(../images/menobg.png) no-repeat center;
+        }
+        
+        .conlist {
+            width: 360px;
+            height: 374px;
+            padding-top: 40px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        
+        .conlist li {
+            width: 310px;
+            height: 15px;
+            font: 14px "楷体";
+            color: #4e4e4e;
+            margin-left: 40px;
+            margin-bottom: 30px;
+        }
+        .conlist li span{display: inline-block;margin: 0 10px;}
+        .conbot {
+            width: 402px;
+            height: 45px;
+            border-top: 1px solid #d7d7d7;
+            color: #ff9abe;
+            font: 14px "楷体";
+        }
+        
+        .conbot li:nth-of-type(1) {
+            margin-left: 25px;
+            margin-top: 16px;
+            float: left;
+        }
+        
+        .conbot span:nth-of-type(1) {
+            margin: 0 10px;
+        }
+        
+        .conbot li:nth-of-type(2) {
+            margin-right: 25px;
+            margin-top: 16px;
+            float: right;
+            color: #f98d00;
+        }
+        
+        .conbot li:nth-of-type(2) span {
+            color: #1d1d1d;
+        }
+        
+        .conbot li:nth-of-type(2) strong {
+            color: #1d1d1d;
+        }
+        
+        .settime {
+            width: 402px;
+            height: 168px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #6d6d6d;
+            font: 12px "楷体";
+            display: none;
+        }
+        
+        .settime .shadow {
+            width: 402px;
+            height: 168px;
+            background: #d2d5ce;
+            opacity: .4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .settime h3 {
+            margin-left: 174px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font: 20px "楷体";
+        }
+        
+        .ymd {
+            width: 402px;
+            height: 45px;
+        }
+        
+        .ymd li {
+            float: left;
+            font: 16px "楷体";
+        }
+        
+        .ymd li:nth-of-type(1) {
+            margin-left: 90px;
+        }
+        
+        .ymd li:nth-of-type(1) img {
+            margin-right: 25px;
+            margin-top: 18px;
+        }
+        
+        .ymd li:nth-of-type(2) img {
+            margin-right: 25px;
+            margin-top: 18px;
+            margin-left: 36px;
+        }
+        
+        .ymd li:nth-of-type(3) img {
+            margin-right: 25px;
+            margin-top: 18px;
+            margin-left: 36px;
+        }
+        
+        .hs {
+            width: 402px;
+            height: 45px;
+        }
+        
+        .hs li {
+            float: left;
+            font: 16px "楷体";
+        }
+        
+        .hs li:nth-of-type(1) {
+            margin-left: 120px;
+        }
+        
+        .hs li:nth-of-type(1) img {
+            margin-right: 25px;
+            margin-top: 3px;
+        }
+        
+        .hs li:nth-of-type(2) img {
+            margin-right: 25px;
+            margin-left: 30px;
+            margin-top: 3px;
+        }

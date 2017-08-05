@@ -1,0 +1,225 @@
+#wrap {
+    width: 402px;
+    height: 535px;
+    /*border: 1px solid #000;*/
+    margin: 0 auto;
+    background: url(../images/smilegirl.png);
+}
+
+.booktop {
+    height: 64px;
+    background: url(../images/head.jpg);
+}
+
+.booktop span {
+    width: 13px;
+    height: 24px;
+    float: left;
+    margin-top: 24px;
+    margin-left: 25px;
+}
+
+.booktop p {
+    width: 120px;
+    height: 64px;
+    color: #fff;
+    font: 22px "楷体";
+    float: left;
+    margin-left: 112px;
+    line-height: 64px;
+}
+
+.bookcon {
+    float: left;
+    width: 402px;
+    height: 471px;
+}
+
+.contop {
+    width: 402px;
+    height: 110px;
+    background: #fff;
+    margin-top: -3px;
+}
+
+.progressbar {
+    background: #fff;
+    width: 124px;
+    height: 52px;
+    margin-left: 140px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progressbar dt {
+    width: 124px;
+    height: 11px;
+    background-color: #e5e6e5;
+    border-radius: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progressbar dt p {
+    /*width: 100px;*/
+    height: 11px;
+    background-color: #82eba9;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.progressbar dt img {
+    margin-top: -4px;
+    position: absolute;
+    /*left: 90px;*/
+}
+
+.progressbar dd {
+    color: #9e9e9e;
+    font: 12px "楷体";
+    width: 124px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.balance {
+    box-sizing: border-box;
+    padding-right: 50px;
+    width: 402px;
+    height: 58px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+.balance li {
+    float: left;
+    width: 117px;
+}
+
+.balance .sale {
+    float: left;
+    color: #84eaa8;
+    margin-top: 20px;
+    margin-left: 74px;
+    display: inline-block;
+    height: 15px;
+}
+
+.balance .sale1 {
+    color: #ec8758;
+    float: left;
+    margin-top: 20px;
+    margin-left: 74px;
+    display: inline-block;
+    height: 15px;
+}
+
+.balance .sale2 {
+    color: #686868;
+    float: left;
+    margin-top: 20px;
+    margin-left: 74px;
+    display: inline-block;
+    height: 15px;
+}
+
+.balance .txt {
+    width: 60px;
+    height: 12px;
+    float: left;
+    color: #9e9e9e;
+    font: 12px "楷体";
+    margin-left: 66px;
+}
+
+.balance .txt1 {
+    width: 88px;
+    height: 12px;
+    float: left;
+    color: #9e9e9e;
+    font: 12px "楷体";
+    margin-left: 66px;
+}
+
+.conmid {
+    width: 402px;
+    height: 308px;
+}
+
+.conmid h3 {
+    width: 120px;
+    height: 12px;
+    margin-left: 41px;
+    margin-top: 17px;
+}
+
+.conmid h3 span {
+    float: left;
+    color: #78686e;
+    font: 12px "楷体";
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.conmid ul {
+    width: 347px;
+    height: 177px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    margin-left: 32px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/*---------------奇数-------------*/
+
+.conmid li:nth-child(odd) {
+    height: 17px;
+    color: #78686e;
+    font: 12px "楷体";
+    margin-left: 230px;
+    line-height: 17px;
+}
+
+.conmid li:nth-child(even) {
+    color: #78686e;
+    font: 12px "楷体";
+    line-height: 41px;
+    height: 41px;
+    background: #efeaea;
+}
+
+
+/*-----------------------偶数----------*/
+
+.conmid li:nth-child(even) img {
+    margin: 10px 13px 0 12px;
+}
+
+.conmid li:nth-child(even) .licai {
+    margin-left: 180px;
+    color: #6ee79a;
+}
+
+.conmid img {
+    width: 23px;
+    height: 23px;
+}
+
+.conbot {
+    width: 402px;
+    height: 60px;
+    background: #e5e1e1;
+    margin-top: 83px;
+}
+
+.conbot img {
+    margin-top: 18px;
+    margin-left: 150px;
+}
+
+.conbot a {
+    color: #630a20;
+    font: 22px "楷体";
+    line-height: 60px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/tallybook.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+        #div {
+            width: 500px;
+            height: 650px;
+            background: url(../images/ipad.png) no-repeat;
+            background-size: 500px;
+            position: absolute;
+            top: 5px;
+            left: 30%;
+            z-index: 12;
+        }
+        
+        #div .onoff {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 235px;
+            bottom: 15px;
+        }
+        
+        #div #con {
+            width: 402px;
+            height: 535px;
+            background: darkcyan;
+            border-radius: 3px;
+            position: absolute;
+            left: 47px;
+            top: 58px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header" id="demo">
+    <div class="canvaszz"> </div>
+    <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="div">
+        <div id="con">
+            <div id="wrap">
+                <div class="booktop">
+                    <span id="backBtn"><img src="../images/youjiantou.png" alt=""></span>
+                    <p>记账薄</p>
+                </div>
+                <div class="bookcon">
+                    <div class="contop">
+                        <dl class="progressbar" id="budgetBtn">
+                            <dt>
+                                <p></p>
+                                <img src="../images/bug.png" alt="">
+                            </dt>
+                            <dd><span>预算余额: 0</span></dd>
+                        </dl>
+                        <ul class="balance">
+                            <li><span class="sale" id="incomeTotal"></span><span class="txt">收入（元）</span></li>
+                            <li><span class="sale1" id="payTotal"></span><span span class="txt">支出（元）</span></li>
+                            <li><span class="sale2" id="paymentBalance"></span><span span class="txt1">收支差额（元）</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="conmid" id="accountBox">
+                        <h3 id="accountDate"></h3>
+                        <ul id="accountList">
+                            <!--<li>收入￥1000.00</li>
+                            <li><img src="images/tuzi.png" alt=""><span>理财</span>
+                                <span class="licai">+￥1000.00</span>
+                            </li>
+                            <li>支出￥200</li>
+                            <li><img src="images/yifu.png" alt=""><span>理财</span>
+                                <span class="licai">+￥1000.00</span></li>
+                            <li>支出￥230</li>
+                            <li><img src="images/lingshi.png" alt=""><span>理财</span>
+                                <span class="licai">+￥1000.00</span></li>-->
+                        </ul>
+                        <div class="conbot">
+                            <img src="../images/pen.png" alt="">
+                            <span><a href="javascript:;" id="accountBtn">记一记</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="onoff"></a>
+    </div>
+<script src="../js/Mtween2.js"></script>
+<script src="../js/starsky.js"></script>
+<script src="../js/move.js"></script>
+<script src="../js/account_data.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/keep_accounts_list.js"></script>
+
+</body>
+
+</html>

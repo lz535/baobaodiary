@@ -1,0 +1,107 @@
+/*最外层结构*/
+
+#wrap {
+    width: 402px;
+    height: 535px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*上边的天空背景，提了层级*/
+
+.topsky {
+    width: 401px;
+    height: 246px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/topsky.png);
+    z-index: 500;
+}
+
+
+/*中间的脸部*/
+
+.midsky {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 402px;
+    height: 136px;
+    margin-left: -1px;
+    background: url(../images/face.png);
+    z-index: 50;
+}
+
+
+/*下面的天空部分，降了层级*/
+
+.botsky {
+    width: 401px;
+    height: 217px;
+    background: url(../images/botsky.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+}
+
+
+/*下面天空的牙齿，降了层级*/
+
+.botsky .bottooth {
+    width: 326px;
+    height: 29px;
+    background: url(../images/bottooth.png) no-repeat;
+    position: absolute;
+    top: -27px;
+    left: 35px;
+    z-index: 40;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/*定位的滑动框*/
+
+.slippping {
+    width: 328px;
+    height: 46px;
+    background: #5e718c;
+    opacity: .3;
+    border-radius: 8px;
+    position: absolute;
+    top: 97px;
+    left: 40px;
+}
+
+
+/*定位的滑动块*/
+
+.slippping p {
+    width: 37px;
+    height: 37px;
+    background: #475a72;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+
+/*定位的滑动球*/
+
+.slippping span {
+    width: 24px;
+    height: 24px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border-radius: 60%;
+    background: #778596;
+}
+
+
+/*最外层结构*/

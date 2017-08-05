@@ -1,0 +1,164 @@
+.box {
+    width: 402px;
+    height: 535px;
+    margin: 0px auto;
+    background: #f6f3f4;
+    position: relative;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－ 头部 －－－－－－－－－－－－－－－－－－－－－－－*/
+
+.head {
+    background: url(../images/riji/head.png) no-repeat;
+    width: 370px;
+    height: 35px;
+    padding: 21px 16px 8px 16px;
+}
+
+.head a,
+.head p {
+    float: left;
+    font-size: 14px;
+    font-family: "楷体";
+}
+
+.rollback {
+    width: 35px;
+    height: 35px;
+    background: url(../images/riji/rollback.png);
+    margin-right: 103px;
+}
+
+.title {
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    margin-right: 82px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－中间－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.main {
+    width: 402px;
+    height: 430px;
+    background: url(../images/riji/ys3.png);
+    position: relative;
+}
+
+.txt {
+    width: 380px;
+    height: 417px;
+    padding: 13px 10px 0 12px;
+}
+
+.txt p {
+    color: #252525;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.txt h3 {
+    font-size: 14px;
+    color: #363434;
+    line-height: 30px;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－脚步－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.foot {
+    width: 344px;
+    height: 35px;
+    background: #f3f3f3 url(../images/riji/zs_03.png) no-repeat 184px 0;
+    padding: 0 29px 3px 29px;
+    position: relative;
+}
+
+.del,
+.compile {
+    width: 30px;
+    height: 10px;
+    padding-top: 25px;
+    color: #453838;
+}
+
+.del {
+    float: left;
+    background: url(../images/riji/del.png) no-repeat;
+}
+
+.compile {
+    float: right;
+    background: url(../images/riji/pen.png) no-repeat;
+}
+
+
+/*----------------------------------------*/
+
+.shadow {
+    width: 402px;
+    height: 535px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.shadow div:nth-of-type(1) {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    z-index: 150;
+    top: 230px;
+    left: 60px;
+    color: #fff;
+    font: 22px "楷体";
+}
+
+.shadow .sure {
+    font: 18px "楷体";
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 280px;
+    left: 80px;
+    color: #fff;
+    z-index: 150;
+    border: 1px solid greenyellow;
+}
+
+.shadow .no {
+    font: 18px "楷体";
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 280px;
+    left: 250px;
+    color: #fff;
+    z-index: 150;
+    border: 1px solid greenyellow;
+}
+
+.shadowbox {
+    width: 340px;
+    height: 180px;
+    position: absolute;
+    background: #000;
+    opacity: 0.4;
+    z-index: 100;
+    top: 180px;
+    left: 20px;
+    border-radius: 10px;
+}

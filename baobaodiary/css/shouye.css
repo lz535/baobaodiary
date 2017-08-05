@@ -1,0 +1,187 @@
+.sy-warp {
+	width: 402px;
+	height: 535px;
+	margin: 0 auto;
+	background: url(../images/sybg.jpg);
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 263px;
+}
+
+.sy-rqq {
+	width: 149px;
+	height: 191px;
+	background: url(../images/rqq.png);
+	position: absolute;
+	top: 0;
+	right: -15px;
+}
+
+.sy-quan {
+	width: 162px;
+	height: 162px;
+	background: url(../images/quan.png);
+	position: absolute;
+	left: 75px;
+	top: 40px;
+}
+
+.quan-sun {
+	width: 31px;
+	height: 30px;
+	background: url(../images/sun.png);
+	position: absolute;
+	left: 37px;
+	top: -6px;
+	transform-origin: center;
+}
+
+.sy-baobao {
+	width: 105px;
+	height: 19px;
+	background: url(../images/baobao.png);
+	position: absolute;
+	left: 26px;
+	top: 60px;
+}
+
+.sy-line {
+	position: absolute;
+	height: 1px;
+	width: 40px;
+	background: #fff;
+	left: 30px;
+	top: 87px;
+}
+
+.sy-time {
+	width: 100px;
+	height: 13px;
+	position: absolute;
+	left: 32px;
+	top: 94px;
+}
+
+.sy-time .sy-txt {
+	font-family: simsun;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	margin-right: 7px;
+}
+
+.sy-time .sy-txt i {
+	font-style: normal;
+	color: #eac939;
+}
+
+.sy-date {
+	font-family: simsun;
+	font-size: 12px;
+	color: #fff;
+	line-height: 12px;
+}
+
+.sy-items {
+	width: 374px;
+	height: 73px;
+	border-bottom: 1px dotted #c9c8c8;
+	margin: 0 auto;
+	font-size: 14px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.sy-items dl {
+	width: 42px;
+	margin-right: 55px;
+	float: left;
+	
+}
+
+.sy-items .nomar {
+	margin-right: 0;
+}
+
+.sy-items dt {
+	width: 42px;
+	height: 44px;
+}
+
+.sy-items .sy-rj {
+	background: url(../images/rj.png);
+}
+
+.sy-items .sy-rl {
+	background: url(../images/rl.png);
+}
+
+.sy-items .sy-jzb {
+	background: url(../images/jzb.png);
+}
+
+.sy-items .sy-bwl {
+	background: url(../images/bwl.png);
+}
+
+.sy-items dd {
+	text-align: center;
+	width: 42px;
+	color: #545454;
+}
+
+.sy-tuzi {
+	height: 47px;
+	background: url(../images/tuzi.png) no-repeat center bottom;
+}
+
+.sy-warp ul {
+	width: 335px;
+	height: 142px;
+	border: 1px solid #d6d6d6;
+	border-radius: 6px;
+	margin: 0 auto;
+	padding: 8px 18px;
+	box-sizing: border-box;
+}
+
+.sy-warp ul li {
+	height: 43px;
+	border-bottom: 1px dotted #dbdbdb;
+	box-sizing: border-box;
+	padding-left: 50px;
+	font-family: '楷体';
+}
+
+.sy-warp ul li div {
+	float: left;
+}
+
+.sy-warp ul li .p1 {
+	font-size: 18px;
+}
+
+.sy-warp ul li .p2 {
+	font-size: 12px;
+}
+
+.sy-warp ul li a {
+	float: right;
+	width: 8px;
+	height: 15px;
+	background: url(../images/yjt.png);
+	margin-top: 17px;
+	margin-right: 10px;
+}
+
+.sy-warp ul .list1 {
+	background: url(../images/list1.png) no-repeat 15px center;
+}
+
+.sy-warp ul .list2 {
+	background: url(../images/list2.png) no-repeat 15px center;
+}
+
+.sy-warp ul .list3 {
+	background: url(../images/list3.png) no-repeat 15px center;
+}

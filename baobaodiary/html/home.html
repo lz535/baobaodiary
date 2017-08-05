@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/starsky.css">
+		<link rel="stylesheet" href="../css/shouye.css" />
+		<script src="../js/jquery.min.js"></script>
+		<style type="text/css">
+			#div {
+				width: 500px;
+				height: 650px;
+				background: url(../images/ipad.png) no-repeat;
+				background-size: 500px;
+				position: absolute;
+				top: 5px;
+				left: 30%;
+				z-index: 12;
+			}
+			
+			#div .onoff {
+				display: block;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				position: absolute;
+				left: 235px;
+				bottom: 15px;
+			}
+			
+			#div #con {
+				width: 402px;
+				height: 535px;
+				background: darkcyan;
+				border-radius: 3px;
+				position: absolute;
+				left: 47px;
+				top: 58px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="header" id="demo">
+			<div class="canvaszz"> </div>
+			<canvas id="canvas"></canvas>
+		</div>
+
+		<div id="div">
+			<div id="con">
+					<!--内容添加处-->
+					<div class="sy-warp">
+						<div class="sy-rqq"></div>
+						<div class="sy-quan">
+							<span class="quan-sun"></span>
+							<div class="sy-baobao-warp">
+								<div class="sy-baobao"></div>
+							</div>
+							<span class="sy-line"></span>
+							<div class="sy-time">
+								<div class="sy-time-warp">
+									<span class="sy-txt"><i>日 </i>记</span><span class="sy-date">2017.4.25</span>
+								</div>
+							</div>
+						</div>
+						<div class="sy-items">
+							<dl>
+								<dt class="sy-rj"></dt>
+								<dd>日记</dd>
+							</dl>
+							<dl>
+								<dt class="sy-rl"></dt>
+								<dd>日历</dd>
+							</dl>
+							<dl>
+								<dt class="sy-jzb"></dt>
+								<dd>记账薄</dd>
+							</dl>
+							<dl class="nomar">
+								<dt class="sy-bwl"></dt>
+								<dd>备忘录</dd>
+							</dl>
+						</div>
+						<div class="sy-tuzi"></div>
+						<ul>
+							<li class="list1">
+								<div>
+									<p class="p1">写日记</p>
+									<p class="p2">春暖花开的时候，我们踏春去</p>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+							<li class="list2">
+								<div>
+									<p class="p1">记一记</p>
+									<p class="p2">哇哦，又花钱啦~</p>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+							<li class="list3">
+								<div>
+									<p class="p1">写备忘</p>
+									<p class="p2">掐指一算，不写别忘，这事肯定忘记啊~</p>
+								</div>
+								<a href="javascript:;"></a>
+							</li>
+						</ul>
+					</div>
+			</div>
+			<a href="javascript:;" class="onoff"></a>
+		</div>
+		<script src="../js/Mtween2.js"></script>
+		<script src="../js/starsky.js"></script>
+		<script src="../js/shouye.js"></script>
+	</body>
+
+</html>

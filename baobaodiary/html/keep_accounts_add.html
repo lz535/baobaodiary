@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+				<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/starsky.css">
+		<script src="../js/jquery.min.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background:#ccc;
+			}
+			ul{
+				list-style: none;
+			}
+			#div {
+				width: 500px;
+				height: 650px;
+				background: url(../images/ipad.png) no-repeat;
+				background-size: 500px;
+				position: absolute;
+				top: 5px;
+				left: 30%;
+				z-index: 12;
+			}
+			
+			#div .onoff {
+				display: block;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				position: absolute;
+				left: 235px;
+				bottom: 15px;
+			}
+			
+			#div #con {
+				width: 402px;
+				height: 535px;
+				background: darkcyan;
+				border-radius: 3px;
+				position: absolute;
+				left: 47px;
+				top: 58px;
+				overflow: hidden;
+			}
+			.warp{
+				width:402px;
+				height:535px;
+				margin: auto;
+				background:#f6f3f4 url(../images/bg.jpg) no-repeat;
+				position: relative;
+				overflow: hidden;
+			}
+			.head{
+				height:64px;
+				background:url(../images/head.jpg) no-repeat;
+				margin-bottom: 21px;
+				padding-top: 21px;
+				box-sizing: border-box;
+				padding-left: 25px;
+			}
+			.head a{
+				text-decoration: none;
+				color: #fff;
+				font-family: '楷体';
+				
+			}
+			.head .fanhui{
+				float: left;
+				width:23px;
+				height:23px;
+				background:url(../images/fanhui.png) no-repeat;
+				margin-right: 85px;
+			}
+			.head .zc,.head .sr{
+				float: left;
+				width:79px;
+				height:21px;
+				border:1px solid #fff;
+				line-height: 21px;
+				text-align: center;
+				
+			}
+			.head .zc{
+				border-left: none;
+			}
+			.head .bc{
+				float: right;
+				line-height: 21px;
+				margin-right: 20px;
+			}
+			.head .hover {
+				color:#ff9699 ;
+				background:#fff;
+			}
+			.warp li{
+				height:46px;
+				margin-bottom: 1px;
+				background:#fff;
+				box-sizing: border-box;
+				padding-left: 18px;
+				padding-right: 25px;
+				font-family: '楷体';
+				
+			}
+			.warp span{
+				float:left;
+				line-height:46px;
+			}
+			.warp input{
+				float:right;
+				margin-top: 10px;
+			}
+			.warp input[type='button']{
+				width:23px;
+				height:23px;
+				background:url(../images/ls.png) no-repeat;
+				border:none;
+				margin-top: 12px;
+				outline: none;
+				/*background-size: 23px 23px;*/
+			}
+			.warp input[type='text']{
+				height:25px;
+				text-align: right;
+				border:none;
+				outline-style: none;
+			}
+			.leibie{
+				height:267px;
+				width:402px;
+				position: absolute;
+				left:0;
+				bottom:-267px;
+				background:rgba(0,0,0,0.4);
+				padding: 5px;
+				box-sizing: border-box;
+			}
+			.leibie dl{
+				width:35px;
+				height:64px;
+				margin-right: 54px;
+				float: left;
+				margin-bottom: 10px;
+				font-family: '楷体';
+			}
+			.leibie dt{
+				width:35px;
+				height:35px;
+				transform: scale(0.001);
+				transform-origin: center center;
+				transition: 1s;
+			}
+			.leibie dd{
+				line-height: 29px;
+				color: #fff;
+				transform: scale(0.001);
+				transform-origin: center center;
+				transition: 1s;
+			}
+			.leibie .nomar{
+				margin-right: 0;
+			}
+			.leibie .lj{
+				background:url(../images/lj.png) no-repeat;
+			}
+			.leibie .gz{
+				background:url(../images/gz.png) no-repeat;
+			}
+			.leibie .ls{
+				background:url(../images/ls2.png) no-repeat;
+			}
+			.leibie .fs{
+				background:url(../images/fs.png) no-repeat;
+			}
+			.leibie .yh{
+				background:url(../images/yh.png) no-repeat;
+			}
+			.leibie .tx{
+				background:url(../images/tx.png) no-repeat;
+			}
+			.leibie .jt{
+				background:url(../images/jt.png) no-repeat;
+			}
+			.leibie .lx{
+				background:url(../images/lx.png) no-repeat;
+			}
+			.leibie .jz{
+				background:url(../images/jz.png) no-repeat;
+			}
+			.leibie .yil{
+				background:url(../images/yil.png) no-repeat;
+			}
+			.leibie .lc{
+				background:url(../images/lc.png) no-repeat;
+			}
+			.leibie .yl{
+				background:url(../images/yl.png) no-repeat;
+			}
+			.leibie .mr{
+				background:url(../images/mr.png) no-repeat;
+			}
+			.leibie .close{
+				position: absolute;
+				width:34px;
+				height:34px;
+				background:url(../images/gb.png) no-repeat;
+				bottom:-50px;
+				left:184px;
+				transform: rotate(0deg);
+				transform-origin: center;
+				transition: 500ms;
+			}
+			.leibie .close:hover{
+				transform: rotate(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header" id="demo">
+			<div class="canvaszz"> </div>
+			<canvas id="canvas"></canvas>
+		</div>
+
+		<div id="div">
+			<div id="con">
+					<!--内容添加处-->
+				<div class="warp">
+					<div class="head">
+						<a href="javascript:;" class="fanhui" id="backBtn" style="font-size: 16px"></a>
+						<a href="javascript:;" class="sr" id="incomeBtn" style="font-size: 16px">收入</a>
+						<a href="javascript:;" class="zc hover" id="payBtn" style="font-size: 16px">支出</a>
+						<a href="javascript:;" class="bc" id="saveBtn" style="font-size: 16px">保存</a>
+					</div>
+					<ul>
+						<li>
+							<span>单价(¥)</span>
+							<input type="text" id="unitPrice" value="0"/>
+						</li>
+						<li>
+							<span>数量</span>
+							<input type="text" value="1.00" id="quantity"/>
+						</li>
+						<li>
+							<span>类别</span>
+							<input type="button" id="choseclass" typeData="零食" typeImg="ls"/>
+						</li>
+						<li>
+							<span>备注</span>
+							<input type="text" id="comment"/>
+						</li>
+					</ul>
+					<div class="leibie">
+						<dl>
+							<dt class="lj"></dt>
+							<dd>礼金</dd>
+						</dl>
+						<dl>
+							<dt class="gz"></dt>
+							<dd>工资</dd>
+						</dl>
+						<dl>
+							<dt class="ls"></dt>
+							<dd>零食</dd>
+						</dl>
+						<dl>
+							<dt class="fs"></dt>
+							<dd>服饰</dd>
+						</dl>
+						<dl class="nomar">
+							<dt class="yh"></dt>
+							<dd>约会</dd>
+						</dl>
+						<dl>
+							<dt class="tx"></dt>
+							<dd>通讯</dd>
+						</dl>
+						<dl>
+							<dt class="jt"></dt>
+							<dd>交通</dd>
+						</dl>
+						<dl>
+							<dt class="lx"></dt>
+							<dd>旅行</dd>
+						</dl>
+						<dl>
+							<dt class="jz"></dt>
+							<dd>兼职</dd>
+						</dl>
+						<dl class="nomar">
+							<dt class="yil"></dt>
+							<dd>医疗</dd>
+						</dl>
+						<dl>
+							<dt class="lc"></dt>
+							<dd>理财</dd>
+						</dl>
+						<dl>
+							<dt class="yl"></dt>
+							<dd>娱乐</dd>
+						</dl>
+						<dl>
+							<dt class="mr"></dt>
+							<dd>美容</dd>
+						</dl>
+						<a href="javascript:;" class="close"></a>
+					</div>
+				</div>
+					<!--内容添加处结束-->
+			</div>
+			<a href="javascript:;" class="onoff"></a>
+		</div>
+		<script src="../js/Mtween2.js"></script>
+		<script src="../js/starsky.js"></script>
+		<script src="../js/account_data.js"></script>
+  	<script src="../js/storage.js"></script>
+  	<script src="../js/util.js"></script>
+  	<script src="../js/keep_accounts_add.js"></script>
+		<
+		<script type="text/javascript">
+			var choseClass = document.getElementById('choseclass');
+			var leiBie = document.getElementsByClassName('leibie')[0];
+			var dts = leiBie.getElementsByTagName('dt');
+			var dds = leiBie.getElementsByTagName('dd');
+			var close = leiBie.getElementsByClassName('close')[0];
+			choseClass.onclick = function(){
+				Mtween({
+					el:leiBie,
+					target:{bottom:0},
+					time:200,
+					fx:'easeIn',
+					callBack:function(){
+						for(var i=0;i<dts.length;i++){
+							setTimeout(function(i){
+								dts[i].style.transform = 'scale(1)';
+								dds[i].style.transform = 'scale(1)';
+							},i*15,i)
+						}
+						Mtween({
+							el:close,
+							target:{bottom:10},
+							time:300,
+							fx:'easeIn'
+						})
+					}
+				})
+			}
+			close.onclick = function(){
+				Mtween({
+					el:leiBie,
+					target:{bottom:-267},
+					time:200,
+					fx:'easeIn',
+					callBack:function(){
+						for(var i=0;i<dts.length;i++){
+							dts[i].style.transform = 'scale(0.001)';
+							dds[i].style.transform = 'scale(0.001)';
+						}
+						close.style.bottom = '-50px';
+					}
+				})
+			}
+			
+		</script>
+	</body>
+</html>

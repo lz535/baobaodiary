@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+			#div {
+				width: 500px;
+				height: 650px;
+				background: url(../images/ipad.png) no-repeat;
+				background-size: 500px;
+				position: absolute;
+				top: 5px;
+				left: 30%;
+				z-index: 12;
+			}
+			
+			#div .onoff {
+				display: block;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				position: absolute;
+				left: 235px;
+				bottom: 15px;
+			}
+			
+			#div #con {
+				width: 402px;
+				height: 535px;
+				background: darkcyan;
+				border-radius: 3px;
+				position: absolute;
+				left: 47px;
+				top: 58px;
+				overflow: hidden;
+			}
+		</style>
+</head>
+
+<body>
+	<div class="header" id="demo">
+			<div class="canvaszz"> </div>
+			<canvas id="canvas"></canvas>
+		</div>
+
+		<div id="div">
+			<div id="con">
+					<!--内容添加处-->
+					<div class="box">
+	    <div id="wrap">
+	        <div class="datetop">
+	            <span><img src="../images/fanhui.png" alt=""></span>
+	            <p id="xjt"><!--2017年04月<img src="../images/xiajiantou.png" alt="" class="xiajiantou">--></p>
+	        </div>
+	        <div class="datecon">
+	            <ul class="connav">
+	                <li>SUN</li>
+	                <li>MON</li>
+	                <li>TUE</li>
+	                <li>WED</li>
+	                <li>THU</li>
+	                <li>FRL</li>
+	                <li>SAT</li>
+	            </ul>
+	            <div class="condate">
+	                <ul class="week">
+	                </ul>
+	            </div>
+	            <div class="choicedate">
+	                <p>选择日期</p>
+	                <ul class="year">
+	                    <li></li>
+	                    <li></li>
+	                    <li></li>
+	                </ul>
+	                <ul class="year">
+	                    <li></li>
+	                    <li></li>
+	                    <li></li>
+	                </ul>
+	                <ul class="year">
+	                    <li></li>
+	                    <li></li>
+	                    <li></li>
+	                </ul>
+	                <div>
+		                <ol id="Year">
+		                	<!--<li>2016年</li>
+		                    <li>2017年</li>
+		                    <li>2018年</li>-->
+		                </ol>
+		                <ol id="Month">
+		                	<!--<li>3月</li>
+		                    <li>4月</li>
+		                    <li>5月</li>-->
+		                </ol>
+		                <ol id="Date">
+		                	<!--<li>24日</li>
+		                    <li>25日</li>
+		                    <li>26日</li>-->
+		                </ol>
+		            </div>
+	                <form>
+	                    <input type="button" name="" value="确定" class="sure">
+	                    <input type="button" name="" value="取消" class="no">
+	                </form>
+	            </div>
+	        </div>
+	        <div class="datebot">
+	            <dl class="diary">
+	                <dt class="txt"></dt>
+	                <dd class="day">日记</dd>
+	                <dd class="today">今天 16：50</dd>
+	            </dl>
+	            <ul class="diraycon">
+	                <li><img src="../images/smile.png" />今天天气很好，我们都很开心，春暖花开的是哈哈我们一起去踏青好不好嘛!!</li>
+	                <li><img src="../images/smile.png" />今天天气很好，我们都很开心，春暖花开的是哈哈我们一起去踏青好不好嘛!!</li>
+	                <li><img src="../images/smile.png" />今天天气很好，我们都很开心，春暖花开的是哈哈我们一起去踏青好不好嘛!!</li>
+	            </ul>
+	            <dl class="book">
+	                <dt class="txt"></dt>
+	                <dd class="day">记账</dd>
+	                <dd class="today">今天</dd>
+	            </dl>
+	            <ul class="bookcon">
+	                <li>饮食<span>-￥100</span></li>
+	                <li>工资<span>￥10000</span></li>
+	                <p><img src="../images/sr.png" alt="">收入</p>
+	                <p><img src="../images/sr.png" alt="">支出</p>
+	            </ul>
+	            <div class="plus">
+	                <img src="../images/plus.png" alt="" id="add">
+	                <img src="../images/jian.png" alt="" class="active">
+	                <div class="icons">
+	                    <dl class="icon" id="rijiBtn">
+	                        <dt></dt>
+	                        <dd>日记</dd>
+	                    </dl>
+	                    <dl class="ben" id="beiwangBtn">
+	                        <dt></dt>
+	                        <dd>备忘录</dd>
+	                    </dl>
+	                    <dl class="jilu" id="keepAccountsBtn">
+	                        <dt></dt>
+	                        <dd>记账簿</dd>
+	                    </dl>
+	                    <img src="../images/jian.png" alt="" class="active">
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+    	<div class="shadow"></div>
+    </div>
+			</div>
+			<a href="javascript:;" class="onoff"></a>
+		</div>
+	
+    <script src="../js/Mtween2.js"></script>
+    <script src="../js/move.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/starsky.js"></script>
+</body>
+</html>

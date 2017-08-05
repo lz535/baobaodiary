@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/budget.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+        #div {
+            width: 500px;
+            height: 650px;
+            background: url(../images/ipad.png) no-repeat;
+            background-size: 500px;
+            position: absolute;
+            top: 5px;
+            left: 30%;
+            z-index: 12;
+        }
+        
+        #div .onoff {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 235px;
+            bottom: 15px;
+        }
+        
+        #div #con {
+            width: 402px;
+            height: 535px;
+            background: darkcyan;
+            border-radius: 3px;
+            position: absolute;
+            left: 47px;
+            top: 58px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="demo">
+    <div class="canvaszz"> </div>
+    <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="div">
+        <div id="con">
+            <div id="wrap">
+                <div class="budget">
+                    <span id="backBtn"><img src="../images/youjiantou.png" alt=""></span>
+                    <p>设置预算</p>
+                    <input type="button" name="" value="保存" id="saveBtn">
+                </div>
+                <div class="budgetcon">
+                    <span>￥ </span><input type="text" id="text" value="0">
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="onoff"></a>
+    </div>
+
+<script src="../js/account_data.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/Mtween2.js"></script>
+<script src="../js/starsky.js"></script>
+<script>
+
+    // 获取用户点击的日期
+    var date = location.search.split('=')[1];
+
+    // 获取返回按钮
+    var backBtn = document.getElementById('backBtn');
+    backBtn.onclick = function () {
+        history.go(-1);
+    }
+
+    // 自定义storage的key
+    var STORAGE_KEY = 'keep-accounts-1.0'
+
+    // 获取storage里面所有的数据
+    var data = getStorageDataByKey(STORAGE_KEY, accountData);;
+
+    // 获取用户输入的值
+    var text = document.getElementById('text');
+
+    // 获取要渲染的账单信息
+    var accountObj = null;
+    data.forEach(function (item) {
+        if (item.date == date) {
+            accountObj = item;
+        }
+    });
+    if (accountObj) {
+        if (accountObj.budgetMoney) {
+            text.value = accountObj.budgetMoney;
+        }
+    }
+
+
+
+    // 获取保存按钮
+    var saveBtn = document.getElementById('saveBtn');
+
+
+    saveBtn.onclick = function () {
+        if (text.value == null || text.value == '') {
+            text.value = 0;
+        }
+        if (accountObj) {
+            accountObj.budgetMoney = text.value;
+        } else {
+            accountObj = {
+                date: date,
+                budgetMoney: text.value,
+                payAccounts: [],
+                incomeAccounts: []
+            }
+            data.unshift(accountObj);
+        }
+        storage.save(data, STORAGE_KEY);
+        location.href = 'keep_accounts_list.html?date=' + date;  
+    }
+
+</script>
+</body>
+
+</html>

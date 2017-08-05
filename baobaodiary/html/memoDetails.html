@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/memodetails.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+        #div {
+            width: 500px;
+            height: 650px;
+            background: url(../images/ipad.png) no-repeat;
+            background-size: 500px;
+            position: absolute;
+            top: 5px;
+            left: 30%;
+            z-index: 12;
+        }
+        
+        #div .onoff {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 235px;
+            bottom: 15px;
+        }
+        
+        #div #con {
+            width: 402px;
+            height: 535px;
+            background: darkcyan;
+            border-radius: 3px;
+            position: absolute;
+            left: 47px;
+            top: 58px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="header" id="demo">
+        <div class="canvaszz"> </div>
+        <canvas id="canvas"></canvas>
+    </div>
+<div id="div">
+        <div id="con">
+            <!--内容添加处-->
+                <div id="wrap">
+        <div class="memodetails">
+            <span><img src="../images/youjiantou.png" alt=""></span>
+            <p>备忘录</p>
+            <input type="button" name="" value="编辑" id="btnEdi">
+            <span class="right"><img src="../images/right.png" alt=""></span>
+
+        </div>
+        <div class="memodetailscon">
+            <ul class="conlist">
+                <li><span>2017-04-24</span><span> 11:09:20</span></li>
+                <li id="contxt"></li>
+               
+            </ul>
+
+        </div>
+        <ul class="conbot">
+            <li><img src="../images/block.png" alt=""><span>2017-05-01</span><span>19:20</span></li>
+            <li><span>剩余时间</span><strong></strong><!--月--><strong></strong><!--天--><strong></strong><!--时--><strong></strong><!--分--></li>
+        </ul>
+        <div class="settime">
+            <div class="shadow"></div>
+            <h3>设置时间</h3>
+            <ul class="ymd">
+                <li><span><img src="../images/tt.png" alt=""></span>年</li>
+                <li><span><img src="../images/tt.png" alt=""></span>月</li>
+                <li><span><img src="../images/tt.png" alt=""></span>日</li>
+            </ul>
+            <ul class="hs">
+                <li><span><img src="../images/redbox.png" alt=""></span> 时</li>
+                <li><span><img src="../images/redbox.png" alt=""></span> 分</li>
+            </ul>
+
+        </div>
+    </div>
+       
+            <!--内容结束处-->
+        </div>
+        <a href="javascript:;" class="onoff"></a>
+    </div>
+
+    
+<script src="../js/Mtween2.js"></script>
+<script src="../js/starsky.js"></script>
+<script src="../js/MemoBookData.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/MemoTool.js"></script>
+<script src="../js/MemoDetails.js"></script>
+</body>
+</html>

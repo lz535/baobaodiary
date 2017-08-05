@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <link rel="stylesheet" href="../css/diary-details.css" />
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+        #div {
+            width: 500px;
+            height: 650px;
+            background: url(../images/ipad.png) no-repeat;
+            background-size: 500px;
+            position: absolute;
+            top: 5px;
+            left: 30%;
+            z-index: 12;
+        }
+        
+        #div .onoff {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 235px;
+            bottom: 15px;
+        }
+        
+        #div #con {
+            width: 402px;
+            height: 535px;
+            background: darkcyan;
+            border-radius: 3px;
+            position: absolute;
+            left: 47px;
+            top: 58px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header" id="demo">
+        <div class="canvaszz"> </div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="div">
+        <div id="con">
+            <!--内容添加处-->
+            <div class="box">
+                <div class="head">
+                    <a href="#" class="rollback"></a>
+                    <p class="title" />遇到男神了</p>
+                </div>
+                <div class="main">
+                    <div class="txt">
+                        <p>2017-4-25 6:10</p>
+                        <h3 class="contxt">今天在地铁遇到了男神，好开心哦，最重要的是他和我讲话了,觉得有了新的进展，233333～</h3>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <div>确定要删除这份日记吗？</div>
+                    <div class="sure">确定</div>
+                    <div class="no">取消</div>
+                    <div class="shadowbox"></div>
+                </div>
+                <div class="foot">
+                    <a href="javascript:;" class="del">删除</a>
+                    <a href="javascript:;" class="compile">编辑</a>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="onoff"></a>
+    </div>
+    <script src="../js/Mtween2.js"></script>
+    <script src="../js/starsky.js"></script>
+    <script src="../js/diary-details.js"></script>
+</body>
+
+</html>

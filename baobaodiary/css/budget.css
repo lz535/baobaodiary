@@ -1,0 +1,62 @@
+#wrap {
+    width: 402px;
+    height: 535px;
+    /*border: 1px solid #000;*/
+    margin: 0 auto;
+    background: url(../images/smilegirl.png);
+}
+
+.budget {
+    height: 64px;
+    background: url(../images/head.jpg);
+}
+
+.budget span {
+    width: 13px;
+    height: 24px;
+    float: left;
+    margin-top: 24px;
+    margin-left: 25px;
+}
+
+.budget p {
+    width: 120px;
+    height: 64px;
+    color: #fff;
+    font: 22px "楷体";
+    float: left;
+    margin-left: 112px;
+    line-height: 64px;
+}
+
+.budget input {
+    float: right;
+    color: #fff;
+    font: 20px "楷体";
+    line-height: 64px;
+    margin-right: 10px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.budgetcon {
+    height: 33px;
+    background: #fff;
+    margin-top: 23px;
+}
+
+.budgetcon span {
+    height: 33px;
+    background: #fff;
+    line-height: 33px;
+    margin-left: 18px;
+    color: #604a4a;
+}
+
+.budgetcon input[type='text'] {
+    margin-left: 170px;
+    height:30px;
+    text-align: right;
+    border:none;
+    outline-style: none;
+}

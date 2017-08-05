@@ -1,0 +1,538 @@
+.box {
+    position: relative;
+    width: 404px;
+    height: 537px;
+    margin: 0 auto;
+    background:#fff;
+}
+
+#wrap {
+    width: 402px;
+    height: 535px;
+}
+
+.datetop {
+    width: 402px;
+    height: 64px;
+    background: url(../images/head.jpg);
+}
+
+.datetop span {
+    width: 13px;
+    height: 24px;
+    float: left;
+    margin-top: 28px;
+    margin-left: 25px;
+}
+
+.datetop p {
+    width: 120px;
+    height: 15px;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    margin-top: 28px;
+    margin-left: 112px;
+    cursor: pointer;
+}
+
+.datetop .xiajiantou {
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+.datecon {
+    width: 402px;
+    height: 235px;
+    background: url(../images/catgirl.png) no-repeat center;
+}
+
+.datecon .connav {
+    width: 402px;
+    height: 24px;
+    font-weight: bold;
+    color: #313030;
+    line-height: 24px;
+    background: #ffeae8;
+}
+
+.connav li {
+    float: left;
+    text-align: center;
+    width: 57px;
+}
+
+.condate {
+    width: 402px;
+    height: 198px;
+    color: #aeaeae;
+}
+
+.condate .week {
+    width: 402px;
+    height: 198px;
+    position: relative;
+    transform-style: preserve-3d;
+    //background: #fde8d7;
+}
+
+.week li {
+    width: 57px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    font-family: '楷体';
+    font-size: 12px;
+    font-weight: bold;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.week i{
+	font-size: 14px;
+}
+.week li .Box{
+	width: 57px;
+    height: 33px;
+    transform-style: preserve-3d;
+	transform-origin:center center 28px;
+	position: relative;
+	
+}
+.week li .Box div{
+	width: 57px;
+    height: 33px;
+    position: absolute;
+   // padding-bottom: 3px;
+}
+/*第二个，第三个控制的同一个颜色，面向我们，第五个是后面的面，第六个是原来的侧面*/
+.week li .Box div:nth-of-type(1){
+	background: royalblue;
+	top: -33px;
+	left: 0;
+	transform-origin:bottom;
+	transform: rotateX(-90deg);
+}
+
+.week li .Box div:nth-of-type(2){
+	top: 0;
+	left: 0;
+	transform-origin:left;
+	transform: rotateY(-90deg);
+	//background: paleturquoise;
+	//background:mistyrose;
+	//background:#ecdede;
+}
+.week li .Box div:nth-of-type(3){
+	top: 0;
+	right: -57px;
+	transform-origin:left;
+	transform: rotateY(-90deg);
+	//background: paleturquoise;
+	//background:mistyrose;
+	//background:#ecdede;
+}
+.week li .Box div:nth-of-type(4){
+	background: blueviolet;
+	left: 0;
+	bottom: -33px;
+	transform-origin:top;
+	transform: rotateX(90deg);
+}
+.week li .Box div:nth-of-type(5){
+	top: 0;
+	left: 0;
+	transform: translateZ(0);
+	//background: #4cbdbd;
+	//background:#febfb8;
+	//background:rosybrown;	
+}
+.week li .Box div:nth-of-type(6){
+	top: 0;
+	left: 0;
+	transform: translateZ(57px);
+	//background:#ecdede;
+	//background:mistyrose;
+	//background: paleturquoise;
+}
+
+.week .thisweek {
+    color: #593e46;
+}
+
+.week .thisweekend {
+    color: #ff958d;
+}
+
+.week span {
+    display: block;
+    font-size: 10px;
+    color: #dbcbd0;
+    margin-left: 15px;
+    margin-top: 3px;
+    width: 25px;
+    height: 5px;
+}
+
+.week li  .Box div.thisday {
+    background: #3cc5bc;
+    color: #fff;
+}
+
+.thisday span {
+    color: #fff;
+}
+
+.choicedate {
+    display: none;
+    width: 293px;
+    height: 162px;
+    position: absolute;
+    background: #fff;
+    top: 90px;
+    left: 50px;
+    z-index: 500;
+}
+
+.choicedate ul:nth-of-type(3) {
+    border-right: none;
+    width: 97px;
+}
+
+.choicedate p {
+    color: #f990a5;
+    font: 14px "楷体";
+    border-bottom: 1px solid #f69caf;
+    height: 39px;
+    line-height: 39px;
+}
+
+.choicedate .year {
+    width: 97px;
+    border-right: 1px solid #f69caf;
+    border-bottom: 1px solid #f69caf;
+    height: 90px;
+    color: #868686;
+    float: left;
+}
+
+.year li {
+    height: 30px;
+    width: 97px;
+}
+
+.choicedate ul li:nth-of-type(2) {
+    background: #f6d5d7;
+}
+
+.choicedate div {
+    width: 293px;
+    height: 90px;
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    left: 0;
+}
+
+.choicedate ol li:nth-of-type(2) {
+    color: #f99aac;
+}
+
+.choicedate ol {
+    width: 97px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+}
+
+.choicedate ol:nth-of-type(1) {
+    left: 0;
+}
+
+.choicedate ol:nth-of-type(2) {
+    left: 97px;
+}
+
+.choicedate ol:nth-of-type(3) {
+    left: 194px;
+}
+
+.choicedate ol li {
+    height: 30px;
+    width: 97px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sure {
+    width: 145px;
+    height: 29px;
+    float: left;
+    border-right: 1px solid #f69caf;
+    color: #f990a5;
+    font-family: '楷体';
+    cursor: pointer;
+}
+
+.no {
+    float: right;
+    width: 145px;
+    height: 29px;
+    color: #f990a5;
+    font-family: '楷体';
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------*/
+
+.datebot {
+    width: 402px;
+    height: 232px;
+    margin-top: 5px;
+}
+
+.datebot .diary {
+    width: 120px;
+    height: 30px;
+    margin-left: 16px;
+}
+
+.diary .txt {
+    width: 32px;
+    height: 30px;
+    background: url(../images/dairy.png);
+    float: left;
+}
+
+.diary .day {
+    width: 24px;
+    height: 11px;
+    float: left;
+    font: 12px "楷体";
+    color: #430f05;
+    margin-left: 12px;
+}
+
+.diary .today {
+    width: 80px;
+    height: 9px;
+    float: left;
+    font: 10px "楷体";
+    margin-left: 8px;
+    margin-top: 3px;
+    color: #898989;
+}
+
+.diraycon {
+    width: 376px;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 16px;
+    margin-top: 4px;
+    color: #757575;
+    font: 10px "楷体";
+    text-indent: 10px;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.datebot .book {
+    width: 120px;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.book .txt {
+    width: 31px;
+    height: 35px;
+    background: url(../images/book.png);
+    float: left;
+}
+
+.book .day {
+    width: 24px;
+    height: 11px;
+    float: left;
+    font: 12px "楷体";
+    color: #430f05;
+    margin-left: 10px;
+}
+
+.book .today {
+    width: 80px;
+    height: 9px;
+    float: left;
+    font: 10px "楷体";
+    margin-left: 8px;
+    margin-top: 3px;
+    color: #898989;
+}
+
+.bookcon {
+    width: 376px;
+    height: 54px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 16px;
+    margin-top: 4px;
+    color: #757575;
+    font: 10px "楷体";
+    text-indent: 10px;
+    line-height: 20px;
+    overflow: auto;
+}
+
+.bookcon li {
+    border-bottom: 1px dashed #ddd;
+}
+
+.bookcon span {
+    float: right;
+    color: #ea3463;
+    margin-right: 10px;
+}
+
+.bookcon p {
+    float: left;
+    font: 12px "楷体";
+}
+
+.bookcon p:nth-of-type(1) {
+    color: #579a0d;
+    margin-left: 110px;
+}
+
+.bookcon p:nth-of-type(2) {
+    color: #ea3463;
+}
+
+.plus {
+    width: 34px;
+    height: 34px;
+    margin-left: 184px;
+    margin-top: 2px;
+    font: 10px "楷体";
+}
+
+.plus .icons {
+    display: none;
+    width: 402px;
+    height: 138px;
+    position: absolute;
+    top: 300px;
+    left: -15px;
+}
+
+.plus .icon {
+    width: 51px;
+    height: 70px;
+    font: 10px "楷体";
+    margin-top: -50px;
+}
+
+.icon dt {
+    width: 51px;
+    height: 51px;
+    border: 1px solid #f48184;
+    border-radius: 50%;
+    position: absolute;
+    top: 97px;
+    left: 95px;
+    z-index: 500;
+    background: white url(../images/dairy.png) no-repeat center;
+}
+
+.icon dd {
+    width: 30px;
+    height: 11px;
+    position: absolute;
+    top: 155px;
+    left: 105px;
+    z-index: 500;
+    color: #fff;
+}
+
+.plus .ben {
+    width: 61px;
+    height: 70px;
+    font: 10px "楷体";
+}
+
+.ben dt {
+    width: 51px;
+    height: 51px;
+    border: 1px solid #f48184;
+    border-radius: 50%;
+    position: absolute;
+    top: 97px;
+    left: 181px;
+    z-index: 500;
+    background: white url(../images/ben.png) no-repeat center;
+}
+
+.ben dd {
+    width: 51px;
+    height: 11px;
+    position: absolute;
+    top: 155px;
+    left: 186px;
+    z-index: 500;
+    color: #fff;
+}
+
+.plus .jilu {
+    width: 61px;
+    height: 70px;
+    font: 10px "楷体";
+}
+
+.jilu dt {
+    width: 51px;
+    height: 51px;
+    border: 1px solid #f48184;
+    border-radius: 50%;
+    position: absolute;
+    top: 97px;
+    left: 273px;
+    z-index: 500;
+    background: white url(../images/book.png) no-repeat center;
+}
+
+.jilu dd {
+    width: 51px;
+    height: 11px;
+    position: absolute;
+    top: 155px;
+    left: 280px;
+    z-index: 500;
+    color: #fff;
+}
+
+.plus img {
+    display: block;
+}
+
+.plus .active {
+    display: none;
+    position: relative;
+    top: -34px;
+    left: 0;
+    z-index: 500;
+}
+
+.shadow {
+    width: 404px;
+    height: 537px;
+    background: #000;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    display: none;
+}

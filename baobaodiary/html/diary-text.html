@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/starsky.css">
+    <link rel="stylesheet" href="../css/diary-text.css" />
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+        #div {
+            width: 500px;
+            height: 650px;
+            background: url(../images/ipad.png) no-repeat;
+            background-size: 500px;
+            position: absolute;
+            top: 5px;
+            left: 30%;
+            z-index: 12;
+        }
+        
+        #div .onoff {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 235px;
+            bottom: 15px;
+        }
+        
+        #div #con {
+            width: 402px;
+            height: 535px;
+            background: darkcyan;
+            border-radius: 3px;
+            position: absolute;
+            left: 47px;
+            top: 58px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header" id="demo">
+        <div class="canvaszz"> </div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="div">
+        <div id="con">
+            <!--内容添加处-->
+            <div class="box">
+                <div class="head">
+                    <a href="#" class="rollback"></a>
+                    <input type="text" value="点击添加标题" class="title" />
+                    <a href="#" class="save">保存</a>
+                </div>
+                <div class="main">
+                    <div class="mood_weather">
+                        <div class="mood"><img src="" /></div>
+                        <div class="weather"><img src="" /></div>
+                    </div>
+                    <div class="txt">
+                        <p>2017-4-25 6:10</p>
+                        <textarea class="contxt"></textarea>
+                    </div>
+                </div>
+                <div class="foot">
+                    <a href="javascript:;" class="bjchoose"></a>
+                    <a href="javascript:;" class="fontchoose"></a>
+                    <div class="bj">
+                        <div class="zs"></div>
+                        <ul class="bj-pic">
+                            <li class="bj-pic1"><span></span></li>
+                            <li class="bj-pic2"><span></span></li>
+                            <li class="bj-pic3"><span></span></li>
+                            <li class="bj-pic4"><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <div class="fontzs"></div>
+                        <div class="zh">
+                            <span>字号</span>
+                            <ul>
+                                <li class="zh1">Aa<span></span></li>
+                                <li class="zh2">Aa<span></span></li>
+                                <li class="zh3">Aa<span></span></li>
+                                <li class="zh4">Aa<span></span></li>
+                                <li class="zh5">Aa<span></span></li>
+                            </ul>
+                        </div>
+                        <div class="fontcolor">
+                            <span>颜色</span>
+                            <ul>
+                                <li class="c1"><span></span></li>
+                                <li class="c2"><span></span></li>
+                                <li class="c3"><span></span></li>
+                                <li class="c4"><span></span></li>
+                                <li class="c5"><span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wm">
+                    <p>心情</p>
+                    <ul class="md">
+                        <li><img src="../images/riji/furious.png" /><span class="active"></span></li>
+                        <li><img src="../images/riji/cute.png" /><span class="active"></span></li>
+                        <li><img src="../images/riji/funny.png" /><span class="active"></span></li>
+                        <li><img src="../images/riji/happy.png" /><span class="active"></span></li>
+                        <li><img src="../images/riji/sad.png" /><span class="active"></span></li>
+                    </ul>
+                    <P>天气</P>
+                    <ul class="wr">
+                        <li class="wr1">
+                            <img src="../images/riji/wr1.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr2">
+                            <img src="../images/riji/wr2.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr3">
+                            <img src="../images/riji/wr3.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr4">
+                            <img src="../images/riji/wr4.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr5">
+                            <img src="../images/riji/wr5.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr6">
+                            <img src="../images/riji/wr6.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr7">
+                            <img src="../images/riji/wr7.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr8">
+                            <img src="../images/riji/wr8.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr9">
+                            <img src="../images/riji/wr9.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr10">
+                            <img src="../images/riji/wr10.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr11">
+                            <img src="../images/riji/wr11.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr12">
+                            <img src="../images/riji/wr12.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr13">
+                            <img src="../images/riji/wr13.png" />
+                            <span class="active"></span>
+
+                        </li>
+                        <li class="wr14">
+                            <img src="../images/riji/wr14.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr15">
+                            <img src="../images/riji/wr15.png" />
+                            <span class="active"></span>
+                        </li>
+                        <li class="wr16">
+                            <img src="../images/riji/wr16.png" />
+                            <span class="active"></span>
+                        </li>
+                    </ul>
+                    <div class="ok">确定</div>
+                    <div class="cancel">取消</div>
+                </div>
+            </div>
+
+        </div>
+        <a href="javascript:;" class="onoff"></a>
+    </div>
+    <script src="../js/Mtween2.js"></script>
+    <script src="../js/starsky.js"></script>
+     <script src="../js/storage.js"></script>
+    <script src="../js/diary-text.js"></script>
+	<script src="../js/util.js"></script>
+</body>
+
+</html>

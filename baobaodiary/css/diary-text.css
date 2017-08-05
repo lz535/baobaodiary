@@ -1,0 +1,403 @@
+.box {
+    width: 402px;
+    height: 535px;
+    margin: 0px auto;
+    background: #f6f3f4;
+    position: relative;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－ 头部 －－－－－－－－－－－－－－－－－－－－－－－*/
+
+.head {
+    background: url(../images/riji/head.png) no-repeat;
+    width: 370px;
+    height: 35px;
+    padding: 21px 16px 8px 16px;
+}
+
+.head a,
+.head input {
+    float: left;
+    font-size: 16px;
+    font-family: "楷体";
+    outline:none;
+}
+.rollback {
+    width: 35px;
+    height: 35px;
+    background: url(../images/riji/rollback.png);
+    margin-right: 20px;
+}
+
+.title {
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.save {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: #FFF;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－中间－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.main {
+    width: 402px;
+    height: 430px;
+    //background:url(../images/riji/ys3.png);
+    position: relative;
+}
+
+.mood_weather {
+    width: 68px;
+    height: 28px;
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+.mood {
+    width: 28px;
+    height: 28px;
+    float: left;
+}
+
+.weather {
+    width: 28px;
+    height: 28px;
+    float: right;
+}
+
+.mood img,
+.weather img {
+    width: 28px;
+    height: 28px;
+}
+
+.txt {
+    width: 380px;
+    height: 417px;
+    padding: 13px 10px 0 12px;
+}
+
+.txt p {
+    color: #252525;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.txt textarea {
+    width: 380px;
+    height: 389px;
+    resize: none;
+    outline: none;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－脚步－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.foot {
+    width: 344px;
+    height: 35px;
+    background: #f3f3f3 url(../images/riji/zs_03.png) no-repeat 184px 0;
+    padding: 0 29px 3px 29px;
+    position: absolute;
+}
+
+.bjchoose,
+.fontchoose {
+    width: 35px;
+    height: 35px;
+}
+
+.bjchoose {
+    float: left;
+    background: url(../images/riji/bjchoose.png);
+}
+
+.fontchoose {
+    float: right;
+    background: url(../images/riji/fontchoose.png)
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－背景选择弹窗－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.bj {
+    width: 402px;
+    height: 152px;
+    background: #f6f3f4;
+    position: absolute;
+    bottom: -152px;
+    left: 0;
+    display: none;
+}
+
+.zs {
+    border-bottom: 1px solid #d1d1d1;
+    height: 30px;
+    width: 402px;
+    background: url(../images/riji/zs.png) no-repeat 190px 6px;
+}
+
+.bj-pic {
+    padding: 22px 18px 19px 20px;
+    width: 364px;
+    height: 80px;
+}
+
+.bj-pic li {
+    float: left;
+    width: 64px;
+    height: 80px;
+    margin-right: 35px;
+    position: relative;
+}
+
+.bj-pic1 {
+    background: url(../images/riji/bj-pic1.png);
+}
+
+.bj-pic2 {
+    background: url(../images/riji/bj-pic2.png);
+}
+
+.bj-pic3 {
+    background: url(../images/riji/bj-pic3.png);
+}
+
+.bj-pic .bj-pic4 {
+    margin-right: 0;
+    background: url(../images/riji/bj-pic4.png);
+}
+
+.bj-pic li span {
+    width: 23px;
+    height: 23px;
+    background: url(../images/riji/choose.png);
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    display: none;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－字体样式选择弹窗－－－－－－－－－－－－－－－－－－－－－*/
+
+.font {
+    width: 402px;
+    height: 134px;
+    background: #f6f3f4;
+    position: absolute;
+    bottom: -134px;
+    left: 0;
+    display: none;
+}
+
+.fontzs {
+    border-bottom: 1px solid #d1d1d1;
+    height: 33px;
+    width: 402px;
+    background: url(../images/riji/fontzs.png) no-repeat 190px 6px;
+    margin-bottom: 7px;
+}
+
+.zh,
+.fontcolor {
+    height: 25px;
+    width: 390px;
+    padding-left: 12px;
+}
+
+.zh span,
+.fontcolor span {
+    font-size: 14px;
+    color: #756565;
+    line-height: 25px;
+    float: left;
+    margin-right: 19px;
+}
+
+.zh {
+    margin-bottom: 27px;
+}
+
+.zh ul {
+    height: 25px;
+}
+
+.zh ul li,
+.fontcolor ul li {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    float: left;
+    margin-right: 50px;
+    line-height: 23px;
+    color: #474747;
+    text-align: center;
+    position: relative;
+}
+
+.zh ul li:last-of-type,
+.fontcolor ul li:last-of-type {
+    margin-right: 0;
+}
+
+.zh1 {
+    font-size: 12px;
+}
+
+.zh2 {
+    font-size: 14px;
+}
+
+.zh3 {
+    font-size: 16px;
+}
+
+.zh4 {
+    font-size: 18px;
+}
+
+.zh5 {
+    font-size: 20px;
+}
+
+.c1 {
+    background: #2b2b2b;
+}
+
+.c2 {
+    background: #FFFFFF;
+}
+
+.c3 {
+    background: #f0b6c7;
+}
+
+.c4 {
+    background: #b63432;
+}
+
+.c5 {
+    background: #a0a0a0;
+}
+
+.zh ul li span,
+.fontcolor ul li span {
+    position: absolute;
+    background: url(../images/riji/choose.png) no-repeat;
+    background-size: 10px;
+    height: 10px;
+    width: 10px;
+    bottom: 0;
+    left: 15px;
+    display: none;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－天气心情－－－－－－－－－－－－－－－－－－－－－*/
+
+.wm {
+    height: 471px;
+    width: 402px;
+    background: #efefef;
+    position: absolute;
+    top: 65px;
+    left: 402px;
+    display: none;
+}
+
+.wm p {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #252525;
+    padding-left: 23px;
+}
+
+.md {
+    height: 63px;
+    width: 382px;
+    background: #ffffff;
+    padding: 7px 0 0 20px;
+}
+
+.md li,
+.wr li {
+    float: left;
+    position: relative;
+}
+
+.md li {
+    margin-right: 23px;
+}
+
+.md li:last-of-type {
+    margin-right: 0;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    background: url(../images/riji/choose.png);
+    background-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    display: none;
+}
+
+.wr {
+    height: 200px;
+    background: #fff;
+    width: 382px;
+    padding: 15px 16px 0 20px;
+}
+
+.wr li {
+    margin-right: 43px;
+    width: 37px;
+    height: 31px;
+    margin-bottom: 22px;
+}
+
+.wr .wr5,
+.wr .wr10,
+.wr .wr15 {
+    margin-right: 0;
+}
+
+.ok,
+.cancel {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px #fff solid;
+    float: left;
+    margin-top: 20px;
+    margin-right: 50px;
+    line-height: 30px;
+    text-align: center;
+    color: #CE709D;
+}
+
+.ok:hover {
+    background: mistyrose;
+}
+
+.cancel:hover {
+    background: mistyrose;
+}
